@@ -1,0 +1,35 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>358</x><y>308</y><w>190</w><h>220</h></coordinates><panel_attributes>_Player_
+--
+-Player ID (PK)
+Name
+  -First Name
+  -Last Name
+-Birthday
+-College
+-Height
+-Weight
+-Years as pro
+-Position 
+-Number of fantasy teams
+-NFL Team (FK)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>790</x><y>338</y><w>210</w><h>190</h></coordinates><panel_attributes>_Fantasy_Team_
+--
+-Team ID (PK)
+-Team Name (AK)
+-Team Owner</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>438</y><w>30</w><h>180</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>598</y><w>210</w><h>70</h></coordinates><panel_attributes>_Player_Fantasy_Team_
+--
+-Player ID (PK) (FK)
+-Team ID (PK) (FK)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>428</y><w>270</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=0..*
+&lt; has </panel_attributes><additional_attributes>10;20;250;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>309</y><w>190</w><h>210</h></coordinates><panel_attributes>_NFL_ Team_
+--
+-NFL Team Abbreviation (PK)
+-NFL Team Name
+-Head Coach
+-Home City
+-Home Stadium</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>399</y><w>200</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=0..1
+&lt; belongs to</panel_attributes><additional_attributes>180;20;10;20</additional_attributes></element></diagram>
